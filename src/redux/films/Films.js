@@ -19,6 +19,7 @@ export const fetchFilms = createAsyncThunk(
       producer: film.producer,
       date: film.release_date,
       runtime: film.running_time,
+      score: film.rt_score,
     }));
     return films;
   },

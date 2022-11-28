@@ -1,0 +1,24 @@
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #fff;
+  height: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logoHolder {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  max-height: 4rem;
+}
+
+.searchContainer {
+  padding: 1rem;
+}
