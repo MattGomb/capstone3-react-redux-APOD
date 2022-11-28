@@ -4,12 +4,13 @@ import Film from './Films';
 
 const FilmsList = (props) => {
   const { films } = props;
+
   return (
-    <li>
+    <section>
       {films.map((film) => (
         <Film film={film} key={film.id} />
       ))}
-    </li>
+    </section>
   );
 };
 

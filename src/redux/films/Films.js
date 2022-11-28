@@ -30,7 +30,7 @@ const initialState = [];
 const filmsSlice = createSlice({
   name: 'films',
   initialState,
-  reducers: {},
+  reducers: { },
   extraReducers: (builder) => {
     builder.addCase(fetchFilms.fulfilled, (state, action) => action.payload);
   },
