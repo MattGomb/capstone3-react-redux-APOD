@@ -6,7 +6,7 @@ const SearchBar = () => (
     <label htmlFor="search">
       <input type="text" id={style.search} placeholder="search by title" name="search" />
     </label>
-    <button type="submit">Search</button>
+    <button className={style.searchBtn} type="submit">Search</button>
   </form>
 );
 
