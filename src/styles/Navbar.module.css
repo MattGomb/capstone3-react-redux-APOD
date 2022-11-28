@@ -19,6 +19,13 @@
   max-height: 4rem;
 }
 
-.searchContainer {
-  padding: 1rem;
+#search,
+button {
+  padding: 0.25rem;
+  font-size: 1.5rem;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
 }
