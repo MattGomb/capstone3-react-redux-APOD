@@ -1,6 +1,17 @@
-.sectionTitle {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 1rem;
-  text-align: center;
+@media screen and (min-width: 320px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+  }
 }
