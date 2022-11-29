@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../styles/Navbar.module.css';
+import style from '../styles/FilmsPage.module.css';
 
 const SearchBar = () => (
   <form action="/" method="get">

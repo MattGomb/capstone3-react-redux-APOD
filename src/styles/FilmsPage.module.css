@@ -5,6 +5,20 @@
     padding: 1rem;
     text-align: center;
   }
+
+  #search,
+  .searchBtn {
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    border-right: 1px solid black;
+  }
+
+  .searchBtn {
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -13,5 +27,12 @@
     font-weight: 700;
     padding: 1rem;
     text-align: center;
+  }
+
+  .allFilmsHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
   }
 }

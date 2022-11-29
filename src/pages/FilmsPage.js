@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import FilmsList from '../components/FilmsList';
 import { fetchFilms } from '../redux/films/Films';
+import SearchBar from '../components/Search';
 import style from '../styles/FilmsPage.module.css';
 
 const FilmsDisplay = () => {
@@ -15,7 +16,10 @@ const FilmsDisplay = () => {
 
   return (
     <section className={style.allFilms}>
-      <h1 className={style.sectionTitle}>Films</h1>
+      <div className={style.allFilmsHeader}>
+        <h1 className={style.sectionTitle}>Films</h1>
+        <SearchBar />
+      </div>
       <FilmsList films={films} />
     </section>
   );
