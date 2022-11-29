@@ -18,7 +18,7 @@ const FilmsDisplay = () => {
     <section className={style.allFilms}>
       <div className={style.allFilmsHeader}>
         <h1 className={style.sectionTitle}>Films</h1>
-        <SearchBar />
+        <SearchBar films={films} />
       </div>
       <FilmsList films={films} />
     </section>
