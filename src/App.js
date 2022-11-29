@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import DetailsDisplay from './pages/DetailsPage';
 import FilmsDisplay from './pages/FilmsPage';
 import './styles/App.css';
 
@@ -10,7 +11,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<FilmsDisplay />} />
-          <Route />
+          <Route path="/Details/:id" element={<DetailsDisplay />} />
         </Routes>
       </main>
     </Router>

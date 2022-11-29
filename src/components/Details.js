@@ -1,32 +1,75 @@
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import style from '../styles/Details.module.css';
 
-const Film = (props) => {
+const Details = (props) => {
   const { film } = props;
   const {
-    title, titleOriginal, image, banner, description, director, producer, date, runtime, score,
+    title,
   } = film;
+
+  const params = useParams();
+  const films = useSelector((state) => state.films);
+  const detailedFilms = films.filter((film) => film.id === params.id);
 
   return (
     <div className={style.filmCard}>
-      <h2 className={style.title}>{title}</h2>
-      <h3 className={style.titleOriginal}>{titleOriginal}</h3>
-      <img src={image} alt={title} className={style.image} />
-      <img src={banner} alt={title} className={style.banner} />
-      <p className={`${style.description} ${style.details}`}>{description}</p>
-      <p className={`${style.director} ${style.details}`}>{director}</p>
-      <p className={`${style.producer} ${style.details}`}>{producer}</p>
-      <p className={`${style.date} ${style.details}`}>{date}</p>
-      <p className={`${style.runtime} ${style.details}`}>{runtime}</p>
-      <p className={`${style.score} ${style.details}`}>{score}</p>
+      {detailedFilms.map((film) => (
+        <div className={style.filmInnerCard} key={film.id}>
+          <h2 className={style.title}>{film.title}</h2>
+          <h3 className={style.titleOriginal}>{film.titleOriginal}</h3>
+          <div className={style.cardDetails}>
+            <img src={film.banner} alt={title} className={style.banner} />
+            <div className={style.detailParas}>
+              <p className={style.description}>
+                Description:
+                <br />
+                {film.description}
+              </p>
+              <div className={style.midCol}>
+                <div className={style.smallCols}>
+                  <p className={style.director}>
+                    Director:
+                    <br />
+                    {film.director}
+                  </p>
+                  <p className={style.producer}>
+                    Producer:
+                    <br />
+                    {film.producer}
+                  </p>
+                </div>
+                <div className={style.smallCols}>
+                  <p className={style.date}>
+                    Release Date:
+                    <br />
+                    {film.date}
+                  </p>
+                  <p className={style.runtime}>
+                    Runtime:
+                    <br />
+                    {film.runtime}
+                  </p>
+                </div>
+                <p className={`${style.score} ${style.smallCols}`}>
+                  RT score:
+                  <br />
+                  {film.score}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
 
-Film.defaultProps = {
+Details.defaultProps = {
   film: {},
   title: '',
   titleOriginal: '',
-  image: '',
   banner: '',
   description: '',
   director: '',
@@ -36,11 +79,10 @@ Film.defaultProps = {
   score: '',
 };
 
-Film.propTypes = {
+Details.propTypes = {
   film: PropTypes.instanceOf(Object),
   title: PropTypes.string,
   titleOriginal: PropTypes.string,
-  image: PropTypes.string,
   banner: PropTypes.string,
   description: PropTypes.string,
   director: PropTypes.string,
@@ -50,4 +92,4 @@ Film.propTypes = {
   score: PropTypes.string,
 };
 
-export default Film;
+export default Details;
