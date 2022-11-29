@@ -61,101 +61,100 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .detailsContainer {
     height: calc(100vh - 5rem);
   }
-  
+
   .filmCard {
     padding: 2rem;
     margin: 0 2rem;
-    }
-  
-    .title {
-      margin-bottom: 0.25rem;
-      font-size: 2.5rem;
-    }
-  
-    .cardDetails {
-      margin-top: 1rem;
-    }
-
-    .banner {
-      max-width: 80%;
-    }
-  
-    .detailParas {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .detailParas p {
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-    }
-  
-    .detailParas p::first-line {
-      font-weight: bold;
-      line-height: 2rem;
-    }
-  
-    .detailParas p:first-child {
-      margin-bottom: 2rem;
-    }
-  
-    .smallCols {
-      width: 33%;
-    }
-  
-    .backSign {
-      position: fixed;
-      top: 5rem;
-      font-size: 2rem;
-      margin-bottom: 6rem;
-      color: black;
-    }
-
-    .backSign:hover {
-      cursor: pointer;
-      color: green;
-    }
   }
+
+  .title {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+  }
+
+  .cardDetails {
+    margin-top: 1rem;
+  }
+
+  .banner {
+    max-width: 80%;
+  }
+
+  .detailParas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .detailParas p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .detailParas p::first-line {
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .detailParas p:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .smallCols {
+    width: 33%;
+  }
+
+  .backSign {
+    position: fixed;
+    top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    color: black;
+  }
+
+  .backSign:hover {
+    cursor: pointer;
+    color: green;
+  }
+}
 
 @media screen and (min-width: 1280px) {
-    .filmCard {
-        padding: 2rem;
-        margin: 0 2rem;
-      }
-    
-      .title {
-        margin-bottom: 0.25rem;
-        font-size: 2.5rem;
-      }
-    
-      .cardDetails {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        margin-top: 1rem;
-      }
-    
-      .banner {
-        max-width: 45%;
-      }
-    
-      .detailParas p:first-child {
-        text-align: justify;
-      }
-    
-      .midCol {
-        display: flex;
-      }
-    
-      .smallCols {
-        width: 33%;
-      }
+  .filmCard {
+    padding: 2rem;
+    margin: 0 2rem;
   }
+
+  .title {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .banner {
+    max-width: 45%;
+  }
+
+  .detailParas p:first-child {
+    text-align: justify;
+  }
+
+  .midCol {
+    display: flex;
+  }
+
+  .smallCols {
+    width: 33%;
+  }
+}
 
 @media screen and (min-width: 1600px) {
   .filmCard {

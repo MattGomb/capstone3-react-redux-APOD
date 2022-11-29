@@ -9,8 +9,9 @@
     background-color: #194569;
     color: white;
   }
+
   .filmCard:nth-child(even) {
-    background-color: #5F84A2;
+    background-color: #5f84a2;
     color: white;
   }
 
@@ -22,13 +23,13 @@
   .filmCard p {
     font-size: 1rem;
   }
-  
-  .titleOriginal{
+
+  .titleOriginal {
     margin-bottom: 1rem;
     font-style: italic;
   }
 
-  .detailsPart{
+  .detailsPart {
     display: flex;
     gap: 1rem;
   }
@@ -37,12 +38,12 @@
     display: flex;
     flex-direction: column;
   }
-  
-  .image{
+
+  .image {
     max-height: 10rem;
     border: 1px black solid;
   }
-  
+
   .director,
   .date {
     margin-bottom: 1rem;
@@ -96,7 +97,6 @@
     width: 20%;
     margin: 1rem;
   }
-  
 }
 
 @media screen and (min-width: 1600px) {
