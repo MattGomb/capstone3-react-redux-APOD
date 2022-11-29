@@ -1,0 +1,169 @@
+@media screen and (min-width: 320px) {
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filmCard {
+    background-color: #194569;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .filmInnerCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title,
+  .titleOriginal {
+    text-align: center;
+  }
+
+  .titleOriginal {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner {
+    border-radius: 1rem;
+    align-self: center;
+    max-width: 320px;
+  }
+
+  .midCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .detailParas p {
+    font-weight: 300;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .detailParas p::first-line {
+    text-decoration: underline;
+  }
+
+  .detailParas p:first-child {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .detailsContainer {
+    height: calc(100vh - 5rem);
+  }
+  
+  .filmCard {
+    padding: 2rem;
+    margin: 0 2rem;
+    }
+  
+    .title {
+      margin-bottom: 0.25rem;
+      font-size: 2.5rem;
+    }
+  
+    .cardDetails {
+      margin-top: 1rem;
+    }
+
+    .banner {
+      max-width: 80%;
+    }
+  
+    .detailParas {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .detailParas p {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+  
+    .detailParas p::first-line {
+      font-weight: bold;
+      line-height: 2rem;
+    }
+  
+    .detailParas p:first-child {
+      margin-bottom: 2rem;
+    }
+  
+    .smallCols {
+      width: 33%;
+    }
+  
+    .backSign {
+      position: fixed;
+      top: 5rem;
+      font-size: 2rem;
+      margin-bottom: 6rem;
+      color: black;
+    }
+
+    .backSign:hover {
+      cursor: pointer;
+      color: green;
+    }
+  }
+
+@media screen and (min-width: 1280px) {
+    .filmCard {
+        padding: 2rem;
+        margin: 0 2rem;
+      }
+    
+      .title {
+        margin-bottom: 0.25rem;
+        font-size: 2.5rem;
+      }
+    
+      .cardDetails {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+    
+      .banner {
+        max-width: 45%;
+      }
+    
+      .detailParas p:first-child {
+        text-align: justify;
+      }
+    
+      .midCol {
+        display: flex;
+      }
+    
+      .smallCols {
+        width: 33%;
+      }
+  }
+
+@media screen and (min-width: 1600px) {
+  .filmCard {
+    margin: 0 6rem;
+    padding: 3rem;
+  }
+
+  .backSign {
+    margin-bottom: 8rem;
+  }
+}
