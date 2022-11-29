@@ -29,7 +29,7 @@ const Film = (props) => {
             <br />
             {date}
           </p>
-          <Link to="details" state={id} key={id}>
+          <Link to={`/details/${id}`}>
             <button className={style.detailBtn} type="submit">Details</button>
           </Link>
         </div>
