@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { RiArrowGoBackLine } from 'react-icons/ri';
 import Details from '../components/Details';
 import { fetchFilms } from '../redux/films/Films';
 import style from '../styles/Details.module.css';
@@ -17,7 +18,7 @@ const DetailsDisplay = () => {
   return (
     <section className={style.detailsContainer}>
       <Link to="/">
-        <div className={style.backSign}>Back</div>
+        <p className={style.backSign}><RiArrowGoBackLine /></p>
       </Link>
       <div>
         <Details films={films} />
