@@ -25,21 +25,15 @@ export const fetchFilms = createAsyncThunk(
   },
 );
 
+const initialState = [];
+
 const filmsSlice = createSlice({
   name: 'films',
-  initialState: {
-    films: [],
-    search: '',
-  },
-  reducers: {
-    searchUpdate: (state, action) => (
-      { ...state, search: action.payload }
-    ),
-  },
+  initialState,
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchFilms.fulfilled, (state, action) => action.payload);
   },
 });
 
-export const { searchUpdate } = filmsSlice.actions;
 export default filmsSlice.reducer;
