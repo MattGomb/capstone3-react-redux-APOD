@@ -17,6 +17,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [Documentation](#documentation)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -44,8 +45,6 @@ Each picture-card contains a 'details'-button, which takes the user to the 'deta
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
@@ -64,11 +63,15 @@ Each picture-card contains a 'details'-button, which takes the user to the 'deta
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Clicking the 'load/refresh' button gives the user 10 random pictures]**
 - **[Clicking the 'details' button navigates the user to a new page with more information]**
 - **[Clicking the 'back' button on the details page navigates the user back to the previously displayed 10 pictures]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Project Documentation <a name="documentation"></a>
+
+- [Loom video presenting the project](https://www.loom.com/share/f41f5a44d04847b1a62547194ff417b2)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,16 +171,6 @@ To run tests, run the following command:
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -200,8 +193,8 @@ If you like this project please give it a star!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
-Logo in the navbar is from https://www.pngwing.com/
+- Original design idea by [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
+- Logo in the navbar is from https://www.pngwing.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
