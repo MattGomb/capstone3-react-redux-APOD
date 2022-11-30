@@ -1,19 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the MissionCard snapshot and react testing library renders correctly 1`] = `
+exports[`the Navbar snapshot renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
-        class="picturesList"
-      />
+      <nav
+        class="navContainer"
+      >
+        <div
+          class="logoHolder"
+        >
+          <img
+            alt="Ghibli logo"
+            class="logo"
+            src="ghibli.png"
+          />
+          <h1
+            class="title"
+          >
+            NASA's Astronomy Picture of the Day
+          </h1>
+        </div>
+      </nav>
     </div>
   </body>,
   "container": <div>
-    <section
-      class="picturesList"
-    />
+    <nav
+      class="navContainer"
+    >
+      <div
+        class="logoHolder"
+      >
+        <img
+          alt="Ghibli logo"
+          class="logo"
+          src="ghibli.png"
+        />
+        <h1
+          class="title"
+        >
+          NASA's Astronomy Picture of the Day
+        </h1>
+      </div>
+    </nav>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

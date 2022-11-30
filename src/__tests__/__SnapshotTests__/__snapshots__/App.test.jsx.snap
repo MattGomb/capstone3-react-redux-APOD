@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the MissionCard snapshot and react testing library renders correctly 1`] = `
+exports[`the app snapshot renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

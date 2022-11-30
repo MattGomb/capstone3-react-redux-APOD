@@ -1,53 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the MissionCard snapshot and react testing library renders correctly 1`] = `
+exports[`the MainPage snapshot renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="pictureCard"
+      <section
+        class="allFilms"
       >
-        <h2
-          class="title"
-        />
-        <embed
-          class="image"
-        />
-        <a
-          href="/details/undefined"
+        <div
+          class="allFilmsHeader"
         >
-          <button
-            class="detailBtn"
-            type="submit"
+          <h1
+            class="sectionTitle"
           >
-            Details
+            Pictures
+          </h1>
+          <button
+            class="searchBtn"
+            type="button"
+          >
+            Load/Refresh
           </button>
-        </a>
-      </div>
+        </div>
+        <div
+          class="loading"
+        >
+          <h2
+            class="loadingMessage"
+          >
+            Click 'load/refresh' to see some beautiful pictures!
+          </h2>
+        </div>
+      </section>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="pictureCard"
+    <section
+      class="allFilms"
     >
-      <h2
-        class="title"
-      />
-      <embed
-        class="image"
-      />
-      <a
-        href="/details/undefined"
+      <div
+        class="allFilmsHeader"
       >
-        <button
-          class="detailBtn"
-          type="submit"
+        <h1
+          class="sectionTitle"
         >
-          Details
+          Pictures
+        </h1>
+        <button
+          class="searchBtn"
+          type="button"
+        >
+          Load/Refresh
         </button>
-      </a>
-    </div>
+      </div>
+      <div
+        class="loading"
+      >
+        <h2
+          class="loadingMessage"
+        >
+          Click 'load/refresh' to see some beautiful pictures!
+        </h2>
+      </div>
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

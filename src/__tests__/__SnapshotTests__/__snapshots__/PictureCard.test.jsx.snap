@@ -1,19 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`the MissionCard snapshot and react testing library renders correctly 1`] = `
+exports[`the PictureCard snapshot renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
         class="pictureCard"
-      />
+      >
+        <h2
+          class="title"
+        />
+        <embed
+          class="image"
+        />
+        <a
+          href="/details/undefined"
+        >
+          <button
+            class="detailBtn"
+            type="submit"
+          >
+            Details
+          </button>
+        </a>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="pictureCard"
-    />
+    >
+      <h2
+        class="title"
+      />
+      <embed
+        class="image"
+      />
+      <a
+        href="/details/undefined"
+      >
+        <button
+          class="detailBtn"
+          type="submit"
+        >
+          Details
+        </button>
+      </a>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
