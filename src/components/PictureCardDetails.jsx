@@ -19,7 +19,11 @@ const Details = (props) => {
         <div className={style.filmInnerCard} key={picture.title}>
           <h2 className={style.title}>{picture.title}</h2>
           <div className={style.cardDetails}>
-            <img src={picture.hdImage} alt={title} className={style.banner} />
+            {picture.type === 'image' ? (
+              <img src={picture.hdImage} alt={title} className={style.banner} />
+            ) : (
+              <embed src={picture.image} title={title} className={style.banner} />
+            )}
             <div className={style.detailParas}>
               <p className={style.description}>
                 explanation:
