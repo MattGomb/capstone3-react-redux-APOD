@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchApod } from '../redux/pictures/PicturesSlice';
-import SearchBar from '../components/Search';
 import style from '../styles/FilmsPage.module.css';
 import PicturesList from '../components/PictureCardList';
 
@@ -17,10 +16,15 @@ const PicturesDisplay = () => {
     <section className={style.allFilms}>
       <div className={style.allFilmsHeader}>
         <h1 className={style.sectionTitle}>Pictures</h1>
-        <SearchBar />
-        <button type="button" onClick={onClickRefresh}>Load/Refresh</button>
+        <button type="button" className={style.searchBtn} onClick={onClickRefresh}>Load/Refresh</button>
       </div>
-      <PicturesList pictures={pictures} />
+      {pictures.length === 0 ? (
+        <div className={style.loading}>
+          <h2 className={style.loadingMessage}>
+            Click &apos;load/refresh&apos; to see some beautiful pictures!
+          </h2>
+        </div>
+      ) : <PicturesList pictures={pictures} />}
     </section>
   );
 };

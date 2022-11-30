@@ -1,16 +1,20 @@
 @media screen and (min-width: 320px) {
-  .filmCard {
+  .pictureCard {
     padding: 1rem;
     margin: 0 1rem;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .filmCard:nth-child(odd) {
+  .pictureCard:nth-child(odd) {
     background-color: #194569;
     color: white;
   }
 
-  .filmCard:nth-child(even) {
+  .pictureCard:nth-child(even) {
     background-color: #5f84a2;
     color: white;
   }
@@ -20,43 +24,19 @@
     font-size: 1.5rem;
   }
 
-  .filmCard p {
-    font-size: 1rem;
-  }
-
-  .titleOriginal {
-    margin-bottom: 1rem;
-    font-style: italic;
-  }
-
-  .detailsPart {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .detailsText {
-    display: flex;
-    flex-direction: column;
-  }
-
   .image {
-    max-height: 10rem;
+    width: 100%;
+    object-fit: contain;
     border: 1px black solid;
-  }
-
-  .director,
-  .date {
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
   }
 
   .detailBtn {
     background: transparent;
     width: fit-content;
     padding: 0.5rem 1rem;
-    align-self: flex-end;
     color: white;
     border: 1px solid white;
+    margin: 0.5rem 0;
   }
 
   .detailBtn:hover {
@@ -71,13 +51,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .filmsList {
+  .picturesList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .filmCard {
+  .pictureCard {
     width: 31%;
     margin: 0.5rem;
     box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.4);
@@ -87,21 +67,17 @@
     margin-bottom: 0.5rem;
     font-size: 2rem;
   }
-
-  .filmCard p {
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  .filmCard {
+  .pictureCard {
     width: 20%;
     margin: 1rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .filmCard {
+  .pictureCard {
     width: 18%;
   }
 }

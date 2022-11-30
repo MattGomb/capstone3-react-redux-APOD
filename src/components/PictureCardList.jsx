@@ -7,7 +7,7 @@ const PicturesList = (props) => {
   const { pictures } = props;
 
   return (
-    <section className={style.filmsList}>
+    <section className={style.picturesList}>
       {pictures.map((picture) => (
         <Picture picture={picture} key={picture.date} />
       ))}

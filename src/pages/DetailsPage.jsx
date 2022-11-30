@@ -10,8 +10,8 @@ const DetailsDisplay = () => {
 
   return (
     <section className={style.detailsContainer}>
-      <Link to="/">
-        <p className={style.backSign}><RiArrowGoBackLine /></p>
+      <Link to="/" className={style.backSign}>
+        <p><RiArrowGoBackLine /></p>
       </Link>
       <div>
         <Details pictures={pictures} />

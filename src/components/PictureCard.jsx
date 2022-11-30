@@ -9,20 +9,18 @@ const Picture = (props) => {
   } = picture;
 
   return (
-    <div className={style.filmCard}>
+    <div className={style.pictureCard}>
       <h2 className={style.title}>{title}</h2>
-      <div className={style.detailsPart}>
-        {type === 'image' ? (
-          <img src={image} alt={title} className={style.image} />
-        ) : (
-          <embed src={image} title={title} className={style.image} />
-        )}
-        <Link to={`/details/${title}`}>
-          <button className={style.detailBtn} type="submit">
-            Details
-          </button>
-        </Link>
-      </div>
+      {type === 'image' ? (
+        <img src={image} alt={title} className={style.image} />
+      ) : (
+        <embed src={image} title={title} className={style.image} />
+      )}
+      <Link to={`/details/${title}`}>
+        <button className={style.detailBtn} type="submit">
+          Details
+        </button>
+      </Link>
     </div>
   );
 };
