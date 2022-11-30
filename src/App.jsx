@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import DetailsDisplay from './pages/FilmCardDetailsPage';
-import FilmsDisplay from './pages/FilmsPage';
+import DetailsDisplay from './pages/DetailsPage';
+import PicturesDisplay from './pages/MainPage';
 import './styles/App.css';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <main>
         <Routes>
-          <Route path="/" element={<FilmsDisplay />} />
-          <Route path="/Details/:id" element={<DetailsDisplay />} />
+          <Route path="/" element={<PicturesDisplay />} />
+          <Route path="/Details/:title" element={<DetailsDisplay />} />
         </Routes>
       </main>
     </Router>

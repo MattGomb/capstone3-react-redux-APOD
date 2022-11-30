@@ -7,7 +7,7 @@ function Navbar() {
     <nav className={style.navContainer}>
       <div className={style.logoHolder}>
         <img src={ghibli} className={style.logo} alt="Ghibli logo" />
-        <h1 className={style.title}>Studio Ghibli Movies</h1>
+        <h1 className={style.title}>NASA&apos;s Astronomy Picture of the Day</h1>
       </div>
     </nav>
   );
