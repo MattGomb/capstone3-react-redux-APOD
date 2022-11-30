@@ -68,6 +68,7 @@
   .filmCard {
     padding: 2rem;
     margin: 0 2rem;
+    box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.4);
   }
 
   .title {

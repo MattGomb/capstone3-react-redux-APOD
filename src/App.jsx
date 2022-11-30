@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import DetailsDisplay from './pages/DetailsPage';
+import DetailsDisplay from './pages/FilmCardDetailsPage';
 import FilmsDisplay from './pages/FilmsPage';
 import './styles/App.css';
 
