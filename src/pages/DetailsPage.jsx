@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RiArrowGoBackLine } from 'react-icons/ri';
-import Details from '../components/Details';
+import Details from '../components/FilmCardDetails';
 import { fetchFilms } from '../redux/films/FilmsSlice';
 import style from '../styles/Details.module.css';
 

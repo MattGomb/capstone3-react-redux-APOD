@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import FilmsList from '../components/FilmsList';
+import FilmsList from '../components/FilmCardList';
 import { fetchFilms } from '../redux/films/FilmsSlice';
 import SearchBar from '../components/Search';
 import style from '../styles/FilmsPage.module.css';

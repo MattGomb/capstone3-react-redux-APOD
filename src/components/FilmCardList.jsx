@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Film from './Films';
+import Film from './FilmCard';
 import style from '../styles/Films.module.css';
 
 const FilmsList = (props) => {
