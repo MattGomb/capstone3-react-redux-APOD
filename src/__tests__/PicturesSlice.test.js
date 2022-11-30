@@ -1,4 +1,4 @@
-import { fetchApod } from "../redux/pictures/PicturesSlice";
+import { fetchApod } from '../redux/pictures/PicturesSlice';
 
 describe('fetchApod function test', () => {
   it('fetchApod is a function', () => {
