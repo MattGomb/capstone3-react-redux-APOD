@@ -15,6 +15,7 @@ export const fetchApod = createAsyncThunk(
       explanation: picture.explanation,
       image: picture.url,
       hdImage: picture.hdurl,
+      type: picture.media_type,
     }));
     return pictures;
   },
