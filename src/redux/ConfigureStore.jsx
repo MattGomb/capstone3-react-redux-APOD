@@ -1,6 +1,6 @@
 import logger from 'redux-logger';
 import { configureStore } from '@reduxjs/toolkit';
-import filmsReducer from './films/Films';
+import filmsReducer from './films/FilmsSlice';
 
 const Store = configureStore({
   reducer: {
