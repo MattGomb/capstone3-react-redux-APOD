@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import style from '../styles/Details.module.css';
 
 const Details = (props) => {
@@ -20,17 +20,17 @@ const Details = (props) => {
           <h2 className={style.title}>{picture.title}</h2>
           <div className={style.cardDetails}>
             {picture.type === 'image' ? (
-              <Link to={picture.hdImage} target="_blank" rel="noreferrer">
+              <a href={picture.hdImage} target="_blank" rel="noreferrer">
                 <img src={picture.hdImage} alt={title} className={style.banner} />
-              </Link>
+              </a>
             ) : (
-              <Link to={picture.image} target="_blank" rel="noreferrer">
+              <a href={picture.image} target="_blank" rel="noreferrer">
                 <embed
                   src={picture.image}
                   title={title}
                   className={style.banner}
                 />
-              </Link>
+              </a>
             )}
             <div className={style.detailParas}>
               <p>

@@ -26,7 +26,8 @@
 
   .image {
     width: 100%;
-    object-fit: contain;
+    max-height: 250px;
+    object-fit: cover;
     border: 1px black solid;
   }
 
