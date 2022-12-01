@@ -79,7 +79,7 @@ Each picture-card contains a 'details'-button, which takes the user to the 'deta
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://apod-mattgomb.netlify.app/)
+- [Click here to be amazed!](https://nasa-apod-mattgomb.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
