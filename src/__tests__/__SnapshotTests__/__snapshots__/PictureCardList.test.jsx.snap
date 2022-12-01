@@ -6,14 +6,34 @@ Object {
   "baseElement": <body>
     <div>
       <section
-        class="picturesList"
-      />
+        class="pictureSection"
+      >
+        <div>
+          <input
+            class="searchBar"
+            placeholder="Find a title..."
+          />
+        </div>
+        <div
+          class="picturesList"
+        />
+      </section>
     </div>
   </body>,
   "container": <div>
     <section
-      class="picturesList"
-    />
+      class="pictureSection"
+    >
+      <div>
+        <input
+          class="searchBar"
+          placeholder="Find a title..."
+        />
+      </div>
+      <div
+        class="picturesList"
+      />
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
