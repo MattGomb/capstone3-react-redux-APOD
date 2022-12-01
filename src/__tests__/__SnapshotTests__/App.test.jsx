@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { render } from '@testing-library/react';
-import store from '../../redux/configureStore';
+import store from '../../redux/ConfigureStore';
 import App from '../../App';
 
 describe('the app snapshot', () => {
