@@ -1,0 +1,73 @@
+@media screen and (min-width: 320px) {
+  .allFilmsHeader {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .searchBtn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    background: #35548b;
+    color: white;
+  }
+
+  .searchBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .searchBtn:active {
+    background-color: #106569;
+    transform: translateY(1px);
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 11.5rem);
+    background-color: #5889e5;
+  }
+
+  .loadingMessage {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #ff2c2c;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .allFilmsHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .loading {
+    height: calc(100vh - 12rem);
+  }
+}

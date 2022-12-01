@@ -1,0 +1,141 @@
+@media screen and (min-width: 320px) {
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 5rem);
+  }
+
+  .pictureCard {
+    background-color: #385da3;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .picInnerCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+  }
+
+  .cardDetails a {
+    text-align: center;
+  }
+
+  .banner {
+    border-radius: 1rem;
+    align-self: center;
+    max-width: 320px;
+  }
+
+  .detailParas p {
+    font-weight: 300;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .detailParas p::first-line {
+    text-decoration: underline;
+  }
+
+  .detailParas p:first-child {
+    text-align: justify;
+  }
+
+  .smallCols {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pictureCard {
+    padding: 2rem 2rem 0 2rem;
+    margin: 0 2rem;
+    box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .title {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+  }
+
+  .cardDetails {
+    margin-top: 1rem;
+  }
+
+  .banner {
+    max-width: 480px;
+  }
+
+  .detailParas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .detailParas p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .detailParas p::first-line {
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .detailParas p:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .backSign {
+    font-size: 2rem;
+    color: black;
+  }
+
+  .backSign:hover {
+    cursor: pointer;
+    color: green;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pictureCard {
+    padding: 2rem;
+    margin: 2rem 2rem;
+  }
+
+  .title {
+    margin-bottom: 0.25rem;
+    font-size: 2.5rem;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .detailParas p:first-child {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .pictureCard {
+    margin: 2rem 2rem;
+    padding: 3rem;
+  }
+}
