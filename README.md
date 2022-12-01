@@ -195,6 +195,7 @@ If you like this project please give it a star!
 
 - Original design idea by [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29)
 - Logo in the navbar is from https://www.pngwing.com/
+- <a href="https://iconscout.com/icons/nasa" target="_blank">Nasa Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">IconScout</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
