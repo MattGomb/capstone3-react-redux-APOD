@@ -1,26 +1,39 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Picture from './PictureCard';
 import style from '../styles/Films.module.css';
 
-const PicturesList = (props) => {
-  const { pictures } = props;
+const PicturesList = () => {
+  const [search, setSearch] = useState('');
+  const pictureslist = useSelector((state) => state.pictures);
+
+  let filteredPictures = pictureslist;
+
+  if (search !== '') {
+    filteredPictures = pictureslist.filter((picture) => picture.title
+      .toLowerCase().includes(search.toLowerCase()));
+  }
 
   return (
-    <section className={style.picturesList}>
-      {pictures.map((picture) => (
-        <Picture picture={picture} key={picture.date} />
-      ))}
+    <section className={style.pictureSection}>
+      <div>
+        <input className={style.searchBar} placeholder="Find a title..." onChange={(e) => setSearch(e.target.value)} />
+      </div>
+      <div className={style.picturesList}>
+        {filteredPictures.map((picture) => (
+          <Picture picture={picture} key={picture.date} />
+        ))}
+      </div>
     </section>
   );
 };
 
-PicturesList.defaultProps = {
+/* PicturesList.defaultProps = {
   pictures: [],
 };
 
 PicturesList.propTypes = {
   pictures: PropTypes.instanceOf(Array),
-};
+}; */
 
 export default PicturesList;
