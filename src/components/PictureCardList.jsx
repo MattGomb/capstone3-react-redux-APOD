@@ -28,12 +28,4 @@ const PicturesList = () => {
   );
 };
 
-/* PicturesList.defaultProps = {
-  pictures: [],
-};
-
-PicturesList.propTypes = {
-  pictures: PropTypes.instanceOf(Array),
-}; */
-
 export default PicturesList;
