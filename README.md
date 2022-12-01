@@ -71,7 +71,7 @@ Each picture-card contains a 'details'-button, which takes the user to the 'deta
 
 ## 🚀 Project Documentation <a name="documentation"></a>
 
-- [Loom video presenting the project](https://www.loom.com/share/f41f5a44d04847b1a62547194ff417b2)
+- [Loom video presenting the project](https://www.loom.com/share/3c92c21e07c547eeba2f00277265a918)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

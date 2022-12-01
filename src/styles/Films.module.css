@@ -1,21 +1,40 @@
 @media screen and (min-width: 320px) {
+  .pictureSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .searchBar {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+  }
+
+  .picturesList {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 19.1rem);
+  }
+
   .pictureCard {
     padding: 1rem;
-    margin: 0 1rem;
-    width: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border: 1px black solid;
   }
 
   .pictureCard:nth-child(odd) {
-    background-color: #194569;
+    background-color: #385da3;
     color: white;
   }
 
   .pictureCard:nth-child(even) {
-    background-color: #5f84a2;
+    background-color: #4167b0;
     color: white;
   }
 
@@ -53,8 +72,7 @@
 
 @media screen and (min-width: 768px) {
   .picturesList {
-    display: flex;
-    flex-wrap: wrap;
+    min-width: 768px;
     justify-content: space-around;
   }
 
@@ -62,6 +80,7 @@
     width: 31%;
     margin: 0.5rem;
     box-shadow: 8px 4px 16px rgba(0, 0, 0, 0.4);
+    border: none;
   }
 
   .title {
