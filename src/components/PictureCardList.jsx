@@ -15,7 +15,7 @@ const PicturesList = () => {
   }
 
   return (
-    <section className={style.pictureSection}>
+    <section className="d-flex flex-column align-items-center">
       <div>
         <input className={style.searchBar} placeholder="Find a title..." onChange={(e) => setSearch(e.target.value)} />
       </div>
