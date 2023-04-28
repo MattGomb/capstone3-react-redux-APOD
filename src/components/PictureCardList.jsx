@@ -7,7 +7,7 @@ const PicturesList = () => {
   const [search, setSearch] = useState('');
   const pictureslist = useSelector((state) => state.pictures);
 
-  let filteredPictures;
+  let filteredPictures = pictureslist;
 
   if (search !== '') {
     filteredPictures = pictureslist.filter((picture) => picture.title

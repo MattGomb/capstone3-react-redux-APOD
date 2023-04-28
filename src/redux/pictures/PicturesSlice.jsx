@@ -8,18 +8,9 @@ export const fetchApod = createAsyncThunk(
   'picture/fetchPictures',
   async () => {
     const response = await fetch(url);
-    const data = await response.json();
+    const picturesData = await response.json();
 
-    const pictures = data.map((picture) => ({
-      title: picture.title,
-      copyright: picture.copyright,
-      date: picture.date,
-      explanation: picture.explanation,
-      image: picture.url,
-      hdImage: picture.hdurl,
-      type: picture.media_type,
-    }));
-    return pictures;
+    return picturesData;
   },
 );
 

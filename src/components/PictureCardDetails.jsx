@@ -19,14 +19,14 @@ const Details = (props) => {
         <div className={style.picInnerCard} key={picture.title}>
           <h2 className={style.title}>{picture.title}</h2>
           <div className={style.cardDetails}>
-            {picture.type === 'image' ? (
-              <a href={picture.hdImage} target="_blank" rel="noreferrer">
-                <img src={picture.hdImage} alt={title} className={style.banner} />
+            {picture.media_type === 'image' ? (
+              <a href={picture.hdurl} target="_blank" rel="noreferrer">
+                <img src={picture.hdurl} alt={title} className={style.banner} />
               </a>
             ) : (
-              <a href={picture.image} target="_blank" rel="noreferrer">
+              <a href={picture.url} target="_blank" rel="noreferrer">
                 <embed
-                  src={picture.image}
+                  src={picture.url}
                   title={title}
                   className={style.banner}
                 />
