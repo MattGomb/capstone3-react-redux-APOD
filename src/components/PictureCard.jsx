@@ -6,12 +6,15 @@ import style from '../styles/Films.module.css';
 const Picture = (props) => {
   const { picture } = props;
   const {
-    title, url, media_type,
+    title, url, media_type, date
   } = picture;
 
   return (
     <div className={style.pictureCard}>
-      <h2 className={style.title}>{title}</h2>
+      <div>
+        <h2 className={style.title}>{title}</h2>
+        <small>({date})</small>
+      </div>
       {media_type === 'image' ? (
         <img src={url} alt={title} className={style.image} />
       ) : (
@@ -31,6 +34,7 @@ Picture.defaultProps = {
   title: '',
   url: '',
   media_type: '',
+  date: '',
 };
 
 Picture.propTypes = {
@@ -38,6 +42,7 @@ Picture.propTypes = {
   title: PropTypes.string,
   url: PropTypes.string,
   media_type: PropTypes.string,
+  date: PropTypes.string,
 };
 
 export default Picture;
