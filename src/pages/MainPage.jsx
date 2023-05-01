@@ -4,7 +4,7 @@ import { fetchApod } from '../redux/pictures/PicturesSlice';
 import style from '../styles/FilmsPage.module.css';
 import PicturesList from '../components/PictureCardList';
 
-const PicturesDisplay = () => {
+const MainDisplay = () => {
   const pictures = useSelector((state) => state.pictures);
   const dispatch = useDispatch();
 
@@ -29,4 +29,4 @@ const PicturesDisplay = () => {
   );
 };
 
-export default PicturesDisplay;
+export default MainDisplay;
