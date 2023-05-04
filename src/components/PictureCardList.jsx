@@ -13,16 +13,10 @@ const PicturesList = () => {
     filteredPictures = pictureslist.filter((picture) => picture.date === date);
   }
 
-  if (search !== '') {
-    filteredPictures = pictureslist.filter((picture) => picture.title
-      .toLowerCase().includes(search.toLowerCase()));
-  }
-
   return (
     <section className="d-flex flex-column align-items-center">
       <div>
         <input type="date" className={style.searchBar} onChange={(e) => setDate(e.target.value)} />
-        <input className={style.searchBar} placeholder="Find a title..." onChange={(e) => setSearch(e.target.value)} />
       </div>
       <div className={style.picturesList}>
         {filteredPictures.map((picture) => (
