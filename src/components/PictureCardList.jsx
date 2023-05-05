@@ -5,12 +5,10 @@ import style from '../styles/Films.module.css';
 
 const PicturesList = () => {
   const [date, setDate] = useState('');
-  const [search, setSearch] = useState('');
   const pictureslist = useSelector((state) => state.pictures);
 
-  let filteredPictures = pictureslist;
   if (date !== '') {
-    filteredPictures = pictureslist.filter((picture) => picture.date === date);
+    pictureslist.filter((picture) => picture.date === date);
   }
 
   return (
@@ -19,9 +17,7 @@ const PicturesList = () => {
         <input type="date" className={style.searchBar} onChange={(e) => setDate(e.target.value)} />
       </div>
       <div className={style.picturesList}>
-        {filteredPictures.map((picture) => (
-          <Picture picture={picture} key={picture.date} />
-        ))}
+        <Picture picture={pictureslist} />
       </div>
     </section>
   );
