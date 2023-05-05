@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchApod } from '../redux/pictures/PicturesSlice';
+import { fetchTodayApod } from '../redux/pictures/PicturesSlice';
 import style from '../styles/FilmsPage.module.css';
 import PicturesList from '../components/PictureCardList';
 
@@ -9,7 +9,7 @@ const MainDisplay = () => {
   const dispatch = useDispatch();
 
   const onClickRefresh = (() => {
-    dispatch(fetchApod());
+    dispatch(fetchTodayApod());
   });
 
   return (
