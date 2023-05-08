@@ -6,6 +6,16 @@ const random20url = 'https://api.nasa.gov/planetary/apod?api_key=L2e4ErVWsFzkxZn
 
 const initialState = [];
 
+export const fetchDate = createAsyncThunk(
+  'picture/fetchDate',
+  async (date) => {
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=L2e4ErVWsFzkxZngJmD3PdOJ97g5JbWOTa01kYAI&date=${date}`);
+    const dateData = await response.json();
+
+    return dateData;
+  },
+);
+
 export const fetchTodayApod = createAsyncThunk(
   'picture/fetchTodayPicture',
   async () => {
@@ -42,7 +52,9 @@ const picturesSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchRandom20Apod.fulfilled, (state, action) => action.payload);
-    builder.addCase(fetchTodayApod.fulfilled, (state, action) => action.payload);
+    builder.addCase(fetchRandom1Apod.fulfilled, (state, action) => action.payload);
+    builder.addCase(fetchTodayApod.fulfilled, (state, action) => [{ ...action.payload }]);
+    builder.addCase(fetchDate.fulfilled, (state, action) => [{ ...action.payload }]);
   },
 });
 
