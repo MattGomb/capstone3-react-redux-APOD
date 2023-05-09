@@ -53,8 +53,8 @@ const picturesSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchRandom20Apod.fulfilled, (state, action) => action.payload);
     builder.addCase(fetchRandom1Apod.fulfilled, (state, action) => action.payload);
-    builder.addCase(fetchTodayApod.fulfilled, (state, action) => [{ ...action.payload }]);
-    builder.addCase(fetchDate.fulfilled, (state, action) => [{ ...action.payload }]);
+    builder.addCase(fetchTodayApod.fulfilled, (state, action) => [action.payload]);
+    builder.addCase(fetchDate.fulfilled, (state, action) => [action.payload]);
   },
 });
 
