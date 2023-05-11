@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RiArrowGoBackLine } from 'react-icons/ri';
 import Details from '../components/PictureCardDetails';
-import style from '../styles/Details.module.css';
 
 const DetailsDisplay = () => {
   const pictures = useSelector((state) => state.pictures);

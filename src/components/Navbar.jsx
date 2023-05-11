@@ -1,5 +1,4 @@
 import React from 'react';
-import style from '../styles/Navbar.module.css';
 import ghibli from '../assets/ghibli.png';
 
 function Navbar() {

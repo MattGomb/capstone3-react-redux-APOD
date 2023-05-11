@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import style from '../styles/Details.module.css';
 
 const Details = (props) => {
   const { picture } = props;

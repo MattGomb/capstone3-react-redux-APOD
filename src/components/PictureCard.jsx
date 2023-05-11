@@ -1,7 +1,6 @@
 /* eslint-disable */
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import style from '../styles/Films.module.css';
 
 const Picture = (props) => {
   const { picture } = props;

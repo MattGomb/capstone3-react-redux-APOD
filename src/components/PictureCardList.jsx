@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Picture from './PictureCard';
-import style from '../styles/Films.module.css';
 import {
   fetchTodayApod, fetchRandom1Apod, fetchRandom20Apod, fetchDate,
 } from '../redux/pictures/PicturesSlice';
