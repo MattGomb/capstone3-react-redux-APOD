@@ -9,18 +9,18 @@ const Picture = (props) => {
   } = picture;
 
   return (
-    <div className="card d-flex flex-column align-items-center col-md-5 col-lg-5">
+    <div className="card d-flex flex-column col-11 col-sm-8 justify-content-between bg-secondary text-light">
       <div className="card-title d-flex flex-column align-items-center m-2">
         <h2>{title}</h2>
         <small>({date})</small>
       </div>
       {media_type === 'image' ? (
-        <img src={url} alt={title} className="h-lg-50" style={{ maxHeight: '40rem'}} />
+        <img src={url} alt={title} style={{ maxHeight: '38rem'}} />
       ) : (
         <embed src={url} title={title} className="" />
       )}
-      <Link to={`/details/${title}`}>
-        <button className="" type="submit">
+      <Link to={`/details/${title}`} className="align-self-center m-2">
+        <button className="btn btn-outline-light" type="submit">
           Details
         </button>
       </Link>
