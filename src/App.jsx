@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <main>
+      <main className="bg-info">
         <Routes>
           <Route path="/" element={<MainDisplay />} />
           <Route path="/Details/:title" element={<DetailsDisplay />} />
