@@ -6,7 +6,7 @@ const MainDisplay = () => {
   const pictures = useSelector((state) => state.pictures);
 
   return (
-    <section>
+    <section className="m-0 p-0" style={{ height: '96vh' }}>
       <div>
         <h1>Pictures</h1>
       </div>

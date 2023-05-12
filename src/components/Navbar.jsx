@@ -3,10 +3,10 @@ import ghibli from '../assets/ghibli.png';
 
 function Navbar() {
   return (
-    <nav className={style.navContainer}>
-      <div className={style.logoHolder}>
-        <img src={ghibli} className={style.logo} alt="Ghibli logo" />
-        <h1 className={style.title}>NASA&apos;s Astronomy Picture of the Day</h1>
+    <nav className="">
+      <div className="d-flex align-items-center justify-content-center gap-4 bg-info" style={{ height: '4rem' }}>
+        <img src={ghibli} className="h-100" alt="Ghibli logo" />
+        <p className="fs-3 m-0">NASA&apos;s Astronomy Picture of the Day</p>
       </div>
     </nav>
   );

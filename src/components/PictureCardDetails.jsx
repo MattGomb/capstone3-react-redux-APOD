@@ -13,31 +13,31 @@ const Details = (props) => {
   const detailedPictures = pictures.filter((picture) => picture.title === params.title);
 
   return (
-    <div className={style.pictureCard}>
+    <div className="">
       {detailedPictures.map((picture) => (
-        <div className={style.picInnerCard} key={picture.title}>
-          <h2 className={style.title}>{picture.title}</h2>
-          <div className={style.cardDetails}>
+        <div className="" key={picture.title}>
+          <h2 className="">{picture.title}</h2>
+          <div className="">
             {picture.media_type === 'image' ? (
               <a href={picture.hdurl} target="_blank" rel="noreferrer">
-                <img src={picture.hdurl} alt={title} className={style.banner} />
+                <img src={picture.hdurl} alt={title} className="" />
               </a>
             ) : (
               <a href={picture.url} target="_blank" rel="noreferrer">
                 <embed
                   src={picture.url}
                   title={title}
-                  className={style.banner}
+                  className=""
                 />
               </a>
             )}
-            <div className={style.detailParas}>
+            <div className="">
               <p>
                 explanation:
                 <br />
                 {picture.explanation}
               </p>
-              <div className={style.smallCols}>
+              <div className="">
                 {picture.copyright ? (
                   <p>
                     copyright:

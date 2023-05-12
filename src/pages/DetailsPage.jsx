@@ -8,8 +8,8 @@ const DetailsDisplay = () => {
   const pictures = useSelector((state) => state.pictures);
 
   return (
-    <section className={style.detailsContainer}>
-      <Link to="/" className={style.backSign}>
+    <section className="">
+      <Link to="/" className="">
         <p><RiArrowGoBackLine /></p>
       </Link>
       <div>

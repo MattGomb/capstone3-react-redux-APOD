@@ -31,13 +31,13 @@ const PicturesList = () => {
     <section className="d-flex flex-column align-items-center">
       <div>
         <form onSubmit={handleSubmit}>
-          <input type="date" className={style.searchBar} onChange={(e) => setDate(e.target.value)} />
+          <input type="date" className="" onChange={(e) => setDate(e.target.value)} />
           <button type="submit">Date!</button>
         </form>
         <button type="button" onClick={onClickRefresh1}>Give me a random entry!</button>
         <button type="button" onClick={onClickRefresh20}>Give me 20 randoms!</button>
       </div>
-      <div className={style.picturesList}>
+      <div className="">
         {pictureslist.map((picture) => (
           <Picture picture={picture} key={picture.title} />
         ))}
