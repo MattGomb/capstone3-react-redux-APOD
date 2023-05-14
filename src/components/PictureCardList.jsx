@@ -28,9 +28,9 @@ const PicturesList = () => {
       <div className="row gap-4 mb-5 justify-content-center w-75">
         <form onSubmit={handleSubmit} className="d-flex justify-content-around col-12 col-sm-10 col-md-3 col-lg-3">
           <input type="date" className="" onChange={(e) => setDate(e.target.value)} />
-          <button type="submit" className="btn btn-outline-secondary text-light">Date!</button>
+          <button type="submit" className="btn btn-outline-secondary text-light fs-4">Date!</button>
         </form>
-        <button className="btn btn-outline-secondary text-light col-11 col-sm-10 col-md-3 col-lg-3" type="button" onClick={onClickRefresh1}>Give me a random entry!</button>
+        <button className="btn btn-outline-secondary text-light col-11 col-sm-10 col-md-3 col-lg-3 fs-4" type="button" onClick={onClickRefresh1}>Give me a random entry!</button>
       </div>
       <div className="row w-100 gap-2 justify-content-center">
         {pictureslist.map((picture) => (
