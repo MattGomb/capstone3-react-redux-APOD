@@ -8,13 +8,11 @@ const DetailsDisplay = () => {
   const pictures = useSelector((state) => state.pictures);
 
   return (
-    <section className="">
-      <Link to="/" className="">
+    <section className="d-flex flex-column align-items-center py-5" style={{ minHeight: 'calc(100vh - 4rem)' }}>
+      <Link to="/" className="text-center text-light">
         <p><RiArrowGoBackLine /></p>
       </Link>
-      <div>
-        <Details pictures={pictures} />
-      </div>
+      <Details pictures={pictures} />
     </section>
   );
 };

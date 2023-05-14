@@ -13,31 +13,33 @@ const Details = (props) => {
   const detailedPictures = pictures.filter((picture) => picture.title === params.title);
 
   return (
-    <div className="">
+    <div className="card col-11 bg-secondary text-light py-4 px-2">
       {detailedPictures.map((picture) => (
         <div className="" key={picture.title}>
-          <h2 className="">{picture.title}</h2>
-          <div className="">
+          <h2 className="card-title text-center">{picture.title}</h2>
+          <div className="row justify-content-center">
             {picture.media_type === 'image' ? (
-              <a href={picture.hdurl} target="_blank" rel="noreferrer">
-                <img src={picture.hdurl} alt={title} className="" />
+              <a href={picture.hdurl} className="col-12 col-sm-11 col-md-10 col-lg-5" target="_blank" rel="noreferrer">
+                <img src={picture.hdurl} alt={title} className="w-100" />
               </a>
             ) : (
               <a href={picture.url} target="_blank" rel="noreferrer">
                 <embed
                   src={picture.url}
                   title={title}
-                  className=""
+                  className="col-5"
                 />
               </a>
             )}
-            <div className="">
-              <p>
-                explanation:
+            <div className="d-flex flex-column justify-content-around col-11 col-sm-11 col-md-10 col-lg-7 gap-4">
+              <div className="fw-light">
+                <h4>
+                  Explanation:
+                </h4>
                 <br />
                 {picture.explanation}
-              </p>
-              <div className="">
+              </div>
+              <div className="d-flex justify-content-around">
                 {picture.copyright ? (
                   <p>
                     copyright:
