@@ -17,7 +17,7 @@ const Picture = (props) => {
       {media_type === 'image' ? (
         <img src={url} alt={title} style={{ maxHeight: '38rem', objectFit: 'contain'}} />
       ) : (
-        <embed src={url} title={title} style={{ maxHeight: '38rem', objectFit: 'contain'}}/>
+        <embed src={url} title={title} style={{ height: '32rem', objectFit: 'contain'}}/>
       )}
       <Link to={`/details/${title}`} className="align-self-center m-2">
         <button className="btn btn-outline-light" type="submit">
